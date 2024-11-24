@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comercial Desigual</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #f4f4f4;
+            padding: 1rem 2rem;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1rem;
+        }
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+        }
+        .carousel img {
+            flex: 0 0 100%;
+            scroll-snap-align: start;
+            width: 100%;
+            height: auto;
+        }
+        section {
+            padding: 2rem;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            width: calc(33% - 1rem);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product h3 {
+            margin: 1rem;
+            font-size: 1.2rem;
+        }
+        .product p {
+            margin: 0 1rem 1rem;
+            font-size: 0.9rem;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        input, textarea, button {
+            font-size: 1rem;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Comercial Desigual
+    </header>
+    <nav>
+        <a href="#home">Inicio</a>
+        <a href="#products">Productos</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+    <section id="home">
+        <h2>Bienvenidos a Comercial Desigual</h2>
+        <div class="carousel">
+            <img src="optimized_images/moda.jpg" alt="Moda">
+            <img src="optimized_images/mujer_casual_verano.jpg" alt="Mujer casual verano">
+            <img src="optimized_images/online_commerce_shopping.jpg" alt="Online commerce shopping">
+            <img src="optimized_images/variedad_del_verano.jpg" alt="Variedad del Verano">
+            <img src="optimized_images/admirando_bolsas.jpg" alt="Admirando bolsas">
+        </div>
+    </section>
+    <section id="products">
+        <h2>Nuestros Productos</h2>
+        <div class="products">
+            <div class="product">
+                <img src="optimized_images/rebajas.jpg" alt="Rebajas">
+                <h3>Rebajas Exclusivas</h3>
+                <p>Descuentos hasta el 80% en ropa seleccionada.</p>
+            </div>
+            <div class="product">
+                <img src="optimized_images/tshirts.jpg" alt="T-Shirts">
+                <h3>T-Shirts de Temporada</h3>
+                <p>Encuentra las mejores prendas de verano.</p>
+            </div>
+            <div class="product">
+                <img src="optimized_images/variedad_del_verano.jpg" alt="Variedad del Verano">
+                <h3>Variedad del Verano</h3>
+                <p>Perfectas para días soleados.</p>
+            </div>
+            <div class="product">
+                <img src="optimized_images/casual.jpg" alt="Estilo Casual">
+                <h3>Estilo Casual</h3>
+                <p>Moda y comodidad en un solo lugar.</p>
+            </div>
+            <div class="product">
+                <img src="optimized_images/descuento.jpg" alt="Descuento del 80%">
+                <h3>Grandes Descuentos</h3>
+                <p>Aprovecha hasta un 80% en productos seleccionados.</p>
+            </div>
+            <div class="product">
+                <img src="optimized_images/grupo.jpg" alt="Grupo de Amigos">
+                <h3>Ropa para Todos</h3>
+                <p>Conjuntos perfectos para compartir con amigos.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contáctanos</h2>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Tu Nombre" required>
+            <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+            <textarea name="message" placeholder="Tu Mensaje" rows="5" required></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Comercial Desigual - Todos los derechos reservados.</p>
+        <p>Siguenos en nuestras redes sociales.</p>
+    </footer>
+</body>
+</html>
